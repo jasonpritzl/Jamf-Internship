@@ -1,5 +1,5 @@
 # Jamf-Internship
-Acme App for Jamf Internship Problem
+Acme App for Jamf Internship Problem  
 The language I chose to write this app in was Swift through XCode using the Storyboard UI. I tried to set up the code in a style of MVC in order to keep it neat and easy to access. 
 To start off, the app does not work. I was able to get the API request working successfuly and was able to print the information from the main website when testing if it worked. After that I tried to set up the rest of the app to work. This included creating the apps design with making a table view that had cells that would display each animal and would create the same amount of cells as there were animals to display. I then mapped all of the code to the creation of a cell so that the information from the API request was able to be used in the creaton and displaying of each cell.
 I got everything setup and tried to run it and got a dataSource must be used in main thread only error and a reloadData() must be used in main thread only error. I have done extensive research to try and figure this error out but I haven't been able to find a solution that I could aply to my code to get it to run successfully. This would be the point at which I would ask for help because unfortunately I am not well versed in making an app.
