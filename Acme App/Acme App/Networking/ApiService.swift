@@ -18,7 +18,7 @@ class ApiService {
         guard let requestURL = url else {fatalError()}
         var request = URLRequest(url: requestURL)
         request.httpMethod = "GET"
-        task = URLSession.shared.dataTask(with: request, completionHandler: { data, response, error in
+        task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data, error == nil else {
                 print("Something went wrong")
                 return
@@ -32,7 +32,7 @@ class ApiService {
                 completion(.failure(error))
             }
             
-        })
+        }
         task?.resume()
     }
 }

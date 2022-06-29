@@ -22,8 +22,10 @@ class AnimalViewController: UIViewController {
     //Calls the fetchAnimals method to load the animals data from the website
     private func loadAnimalsData() {
         viewModel.fetchAnimals { [weak self] in
-            self?.tableView.dataSource = self
-            self?.tableView.reloadData()
+            DispatchQueue.main.async {
+                self?.tableView.dataSource = self
+                self?.tableView.reloadData()
+            }
         }
     }
 }
